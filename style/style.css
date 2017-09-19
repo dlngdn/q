@@ -1,3 +1,122 @@
-.something{
-	
+html, body {
+	background: rgb(248,248,248);
+	font-family: 'Archivo', sans-serif;
+}
+
+.todo-app {
+	margin: 50px auto;
+	width: 80%;
+}
+
+.settings{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.list-reset{
+	display: none;
+	position: absolute;
+	bottom: -30px;
+	right: 0px;
+	width: 43px;
+	height: 28px;
+	cursor: pointer;
+}
+
+.settings.open .list-reset{
+	display: block;
+}
+
+.todo-input {
+	position: relative;
+	width: 100%;
+}
+
+.todo-input input, .todo-item {
+	display:block;
+	width: 100%;
+	line-height: 1.5;
+	color: rgb(85,89,92);
+	background-color: rgb(255,255,255);
+	border: 1px solid rgb(224,224,224);
+	padding: 8px 12px;
+	font-size: 14px;
+	border-radius: 3px;
+	box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+	padding-right: 90px;
+}
+
+.todo-input input:focus {
+	border:1px solid rgb(86,171,232);
+  -webkit-box-shadow: 0px 0px 1px 0px rgb(86,171,232);
+  box-shadow: 0px 0px 1px 0px rgb(86,171,232);
+}
+
+.todo-input-button {
+	position: absolute;
+	top: 8px;
+	right: 12px;
+	background: rgb(86,171,232);
+	color: rgb(255,255,255);
+	border:1px solid rgb(66,151,212);
+	border-radius: 2px;
+  line-height: 1.5;
+	cursor: pointer;
+}
+
+.todo-list {
+	margin: 10px 0px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.todo-item {
+	margin-bottom: 10px;
+  padding: 6px 12px 6px 12px;
+	line-height: 16px;
+	cursor: pointer;
+	color: rgb(0,0,0);
+	white-space: nowrap;
+  overflow: hidden;
+	vertical-align: middle;
+}
+
+.todo-item.checked .todo-text{
+	text-decoration: line-through;
+	color: rgb(150,150,150);
+}
+
+.todo-item:hover {
+	background: rgba(0,0,255, 0.005);
+}
+
+.todo-text{
+	display: block;
+	float: left;
+	vertical-align: middle;
+	width: calc(100% - 34px);
+	font-weight: 600;
+	white-space: nowrap;
+  overflow: hidden;
+	text-overflow: ellipsis;
+	height: 22px;
+	margin: 0 auto;
+	line-height: 22px;
+}
+
+.checkbox-image-wrapper{
+	display: block;
+	float: left;
+	margin-right: 10px;
+	width: 22px;
+}
+
+.checkbox-image{
+	display: block;
 }
